@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+            Student Form
+	</title>
+    <style>
+        #td1{
+            margin-top:-20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center"> Student Details</h1>
+        
+    <fieldset> <legend> Personal Details </legend> 
+        <form><br>
+            <table>
+                <tr>
+                    <td><label> First Name:</label></td>
+                    <td> <input type="text" placeholder="Enter your first name" required> </td>
+                </tr>
+                <tr>
+                    <td><label> Last Name:</label></td>
+                    <td><input type="text" placeholder="Enter your last name" required></td>
+                </tr>
+                <tr>
+                    <td><label>Mobile Number:</label></td>
+                    <td><input type="number" placeholder="Enter your mobile no." required pattern="[6789]{1}[0-9]{9}"></td>
+                </tr>
+                <tr>
+                    <td><lable>Address:</lable></td>
+                    <td><textarea rows="4" cols="20" placeholder="Enter your address here"></textarea></td>
+                </tr>
+                <tr>
+                    <td><lable>E-mail:</lable></td>
+                    <td><input type="email" placeholder="Enter your email id" required> </td>
+                </tr>
+                <tr>
+                    <td><lable>Gender:</lable></td>
+                    <td><input type="radio" name="gender"> Male 
+                        <input type="radio" name="gender"> Female
+                        <input type="radio" name="gender"> Others
+                    </td>
+                </tr>
+                <tr>
+                    <td><lable>Date of Birth:</lable></td>
+                    <td><input type="date"> </td>
+                </tr>
+                <tr>
+                    <td><lable>Native Language:</lable></td>
+                    <td>
+                        <select>
+                            <option>select a language</option>
+                            <option>Hindi</option>
+                            <option>English</option>
+                            <option>Telugu</option>
+                            <option>Tamil</option>
+                            <option>Kannada</option>
+                            <option>Malayalam</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td  id="td1"><lable>Languages known:</lable> </td>
+                        <td><input type="radio">Hindi <br>
+                        <input type="radio">English <br>
+                        <input type="radio">Telugu <br>
+                        <input type="radio">Tamil <br>
+                        <input type="radio">Kannada <br>
+                        <input type="radio">Malayalam
+                    </td>
+                </tr>
+                <tr>
+                    <td><lable>Upload Photo:</lable> </td>
+                    <td><input type="file"></td>
+                </tr>
+            </table>
+            <input type="submit" align="center" value="Save details"  >
+        </form>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Education Details</legend>
+        <form>
+            <table>
+                <tr>
+                    <td><label>Select your highest qualificaion:</label></td>
+                    <td><select>
+                        <option>Select your qualification</option>
+                        <option>M.Tech</option>
+                        <option>B.Tech</option>
+                        <option>Degree</option>
+                        <option>12th</option>
+                        <option>Diploma</option>
+                        <option>10th</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label>College Name:</label></td>
+                    <td><input type='text'></td>
+                </tr>
+                <tr>
+                    <td><lable>Branch of study:</lable></td>
+                    <td> <select>
+                        <option>CSE</option>
+                        <option>ECE</option>
+                        <option>EEE</option>
+                        <option>MECH</option>
+                        <option>CIVIL</option>
+                        <option>IT</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label>CGPA:</label></td>
+                    <td><input type='number' pattern="[0-9][.]{1,4}" placeholder="enter your cgpa"></td>
+                </tr>
+
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>
